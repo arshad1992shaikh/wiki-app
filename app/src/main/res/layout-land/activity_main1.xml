@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_alignParentLeft="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/primaryColor"
+                android:src="@drawable/ic_home_black_24dp" />
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_alignParentRight="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/primaryColor"
+                android:src="@drawable/ic_arrow_forward_black_24dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryLightColor">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@drawable/elonpotrait" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_below="@id/image"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Elon Musk"
+                android:textColor="@color/primaryTextColor"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_below="@id/title"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="American industrialist and investor"
+                android:textColor="@color/primaryDarkColor"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_toRightOf="@id/image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="5sp"
+                android:text="Elon Reeve Musk FRS (born June 28, 1971) is a technology entrepreneur, investor, and engineer. He holds South African, Canadian, and U.S. citizenship and is the founder, CEO, and lead designer of SpaceX; co-founder, CEO, and product architect of Tesla, Inc.; co-founder and CEO of Neuralink; founder of The Boring Company; co-founder and co-chairman of OpenAI and co-founder of PayPal. In December 2016, he was ranked 21st on the Forbes list of The World's Most Powerful People. As of June 2019, he has a net worth of $18.2 billion and is listed by Forbes as the 58th-richest person in the world.\n\n"
+                android:textColor="@color/primaryTextColor" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>

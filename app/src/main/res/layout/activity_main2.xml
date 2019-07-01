@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_alignParentLeft="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/primaryColor"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_alignParentRight="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/primaryColor"
+                android:src="@drawable/ic_arrow_forward_black_24dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryLightColor">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@drawable/paypal" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PayPal"
+                android:textColor="@color/primaryTextColor"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Online financial services company"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/primaryDarkColor"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="In March 1999, Musk co-founded X.com, an online financial services and e-mail payment company, with US$10 million from the sale of Zip2. One year later, the company merged with Confinity, which had a money-transfer service called PayPal. The merged company focused on the PayPal service and was renamed PayPal in 2001. PayPal's early growth was driven mainly by a viral marketing campaign where new customers were recruited when they received money through the service. Musk was ousted in October 2000 from his role as CEO (although he remained on the board) due to disagreements with other company leadership, notably over his desire to move PayPal's Unix-based infrastructure to Microsoft Windows. In October 2002, PayPal was acquired by eBay for US$1.5 billion in stock, of which Musk received US$165 million. Before its sale, Musk, who was the company's largest shareholder, owned 11.7% of PayPal's shares.\n\n"
+                android:textColor="@color/primaryTextColor"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="5sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

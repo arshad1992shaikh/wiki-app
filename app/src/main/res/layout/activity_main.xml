@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/primaryLightColor">
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor">
+
+            <ImageButton
+                android:layout_alignParentLeft="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/primaryColor"
+                android:src="@drawable/ic_menu_black_24dp" />
+            <ImageButton
+                android:layout_alignParentRight="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/primaryColor"
+                android:src="@drawable/ic_search_black_24dp" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryDarkColor"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/star"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/ic_stars_black_24dp" />
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="  Featured article"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/primaryTextColor"
+                    android:textSize="30sp"/>
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/elon"
+                    android:layout_below="@id/star"/>
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/title"
+                    android:layout_below="@id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Building Blocks of Elon's career"
+                    android:textColor="@color/primaryTextColor"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"/>
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/main"
+                    android:layout_below="@id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="\nHow is it even possible that Elon Musk could build four multibillion companies by his mid-40s — in four separate fields (software, energy, transportation, and aerospace)?\n"
+                    android:textColor="@color/primaryTextColor"/>
+                <Button
+                    android:id="@+id/next"
+                    android:layout_below="@id/main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="READ NOW"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

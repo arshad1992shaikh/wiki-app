@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_alignParentLeft="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/primaryColor"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_alignParentRight="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/primaryColor"
+                android:src="@drawable/ic_arrow_forward_black_24dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryLightColor">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@drawable/tesla" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tesla, Inc."
+                android:textColor="@color/primaryTextColor"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="American automotive and energy company"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/primaryDarkColor"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tesla, Inc. (originally Tesla Motors) was incorporated in July 2003 by Martin Eberhard and Marc Tarpenning, who financed the company until the Series A round of funding. Both men played active roles in the company's early development prior to Elon Musk's involvement. Musk led the Series A round of investment in February 2004, joining Tesla's board of directors as its chairman. Musk took an active role within the company and oversaw Roadster product design at a detailed level, but was not deeply involved in day-to-day business operations. Following the financial crisis in 2008 and after a series of escalating conflicts in 2007, Eberhard was ousted from the firm. Musk assumed leadership of the company as CEO and product architect, positions he still holds today. Tesla Motors first built an electric sports car, the Tesla Roadster in 2008, with sales of about 2,500 vehicles to 31 countries. Tesla began delivery of its four-door Model S sedan on June 22, 2012. It unveiled its third product, the Model X, aimed at the SUV/minivan market, on February 9, 2012; however, the Model X launch was delayed until September 2015. In addition to its own cars, Tesla sells electric powertrain systems to Daimler for the Smart EV, Mercedes B-Class Electric Drive and Mercedes A Class, and to Toyota for the RAV4 EV. Musk was able to bring in both companies as long-term investors in Tesla.\n\n"
+                android:textColor="@color/primaryTextColor"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="5sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

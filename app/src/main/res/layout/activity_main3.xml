@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_alignParentLeft="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/primaryColor"
+                android:src="@drawable/ic_arrow_back_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_alignParentRight="true"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@color/primaryColor"
+                android:src="@drawable/ic_arrow_forward_black_24dp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryLightColor">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:adjustViewBounds="true"
+                android:src="@drawable/spacex" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SpaceX"
+                android:textColor="@color/primaryTextColor"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="American aerospace company"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/primaryDarkColor"/>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="With US$100 million of his early fortune, Musk founded Space Exploration Technologies, or SpaceX, in May 2002. Musk is chief executive officer (CEO) and chief technology officer (CTO) of the Hawthorne, California-based company. SpaceX develops and manufactures space launch vehicles with a focus on advancing the state of rocket technology. The company's first two launch vehicles are the Falcon 1 and Falcon 9 rockets (a nod to Star Wars' Millennium Falcon), and its first spacecraft is the Dragon (a nod to Puff the Magic Dragon). In seven years, SpaceX designed the family of Falcon launch vehicles and the Dragon multipurpose spacecraft. In September 2008, SpaceX's Falcon 1 rocket became the first privately funded liquid-fueled vehicle to put a satellite into Earth orbit. On May 25, 2012, the SpaceX Dragon vehicle berthed with the ISS, making history as the first commercial company to launch and berth a vehicle to the International Space Station.\n\n"
+                android:textColor="@color/primaryTextColor"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="sans-serif"
+                android:lineSpacingExtra="5sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
